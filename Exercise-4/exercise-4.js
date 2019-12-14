@@ -1,10 +1,13 @@
-var tanggal = 010; // assign nilai variabel tanggal disini! (dengan angka antara 1 - 31)
+var tanggal = 012; // assign nilai variabel tanggal disini! (dengan angka antara 1 - 31)
 //cari lagi kenapa kalo tanggal lebih dari 10 ditambah 0 dibelakang jadi kekurang 2 / kalo tahun nggak.
 var bulan = 012; // assign nilai variabel bulan disini! (dengan angka antara 1 - 12)
-var tahun = 1945; // assign nilai variabel tahun disini! (dengan angka antara 1900 - 2200)
+var tahun = 001945; // assign nilai variabel tahun disini! (dengan angka antara 1900 - 2200)
 var salah = ''; //variabel jika input tidak valid, nanti diganti
 
 
+console.log(tanggal);
+console.log(bulan);
+console.log(tahun);
 
 switch(bulan){
     case 1:
