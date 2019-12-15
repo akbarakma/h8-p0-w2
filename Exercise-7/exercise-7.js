@@ -8,9 +8,13 @@ for(var i = 1; i<=row1; i++){
 /*ROW 2 */
 console.log('Tugas 2')
 var row2 = 5;
-for(var i = 1; i<=row2; i++){
-    for(var j = 1; j<=row2; j++){
-        console.log('*');
+var bintang = '*';
+for (var i = 1 ; i <= row2 ; i++){
+    console.log(bintang)
+    bintang = bintang + '*'  
+    for(var j = 1 ; j <= row2 ; j++){
+          
+        console.log(bintang)
     }
-    console.log('/')
+    
 }
