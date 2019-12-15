@@ -1,4 +1,5 @@
 /* SOAL 1 */
+console.log('Tugas 1')
 var loop1 = 2;
 var loop2 = 20;
 
@@ -15,7 +16,7 @@ while(loop2 >= 2){
 }
 
 /*SOAL 2 */
-
+console.log('Tugas 2')
 console.log('Looping pertama:');
 for(var i = 1; i<=20; i++){
     console.log(i + '- I love coding!')
