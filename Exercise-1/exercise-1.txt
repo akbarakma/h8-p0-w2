@@ -2,3 +2,42 @@ Percepatan sebuah benda akan sebanding dengan gaya yang diberikan pada benda dan
 
 1. Newton Second Law
 
+read gaya, percepatan, massa
+massa = 600
+percepatan = 2
+gaya = massa * percepatan
+write gaya
+
+
+2. Tahun Kabisat
+
+read tahun = number.
+if tahun mod 4 sama dengan 0 dan tahun mod 100 tidak sama dengan 0 then
+	write = 'kabisat'.
+else if tahun mod 4 sama dengan 0 dan tahun mod 100 sama dengan 0 dan tahun mod 400 sama dengan 0 then
+	write = 'kabisat'.
+else
+	write = 'tidak kabisat'.
+END IF
+
+
+3. Laundry Day
+
+read pakaian
+if pakaian >= 20 then
+	write Mesin cuci dinyalakan
+else
+	write Pakaian belum lengkap
+END IF
+
+4. Periksa Kuku
+
+read jumlah = 40, siswa[jumlah], kukuPanjang
+for i = 1 to jumlah then
+	if siswa[i] = kukuPanjang then
+		write = Guru memuji siswa
+	else
+		write = Guru menghukum siswa
+	END IF
+END FOR
+ 
