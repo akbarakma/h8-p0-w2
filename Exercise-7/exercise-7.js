@@ -21,7 +21,7 @@ for(var i = 0 ; i <= row2 ; i++){
 console.log('Tugas 3');
 var row3 = 5;
 var bintang = '';
-for (var i = 1 ; i <= row3+1 ; i++){
+for (var i = 1 ; i <= row3 ; i++){
     for(var j = 1 ; j <= i ; j++){
         bintang += '*'
     }
