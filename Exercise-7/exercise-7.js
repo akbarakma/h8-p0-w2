@@ -6,6 +6,7 @@ for(var i = 0 ; i <= row1 ; i++){
 }
 
 //ROW 2
+console.log('Tugas 2')
 var row2 = 5;
 var bintang = '';
 for(var i = 0 ; i <= row2 ; i++){
