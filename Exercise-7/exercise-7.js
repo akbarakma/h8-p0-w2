@@ -14,5 +14,17 @@ for(var i = 0 ; i <= row2 ; i++){
         bintang += '*';
     }
     console.log(bintang);
-    bintang = '\n';
+    bintang = '';
+}
+
+//ROW 3
+console.log('Tugas 3');
+var row3 = 5;
+var bintang = '';
+for (var i = 1 ; i <= row3+1 ; i++){
+    for(var j = 1 ; j <= i ; j++){
+        bintang += '*'
+    }
+    console.log(bintang);
+    bintang = '';
 }
