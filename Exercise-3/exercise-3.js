@@ -1,7 +1,7 @@
 var nama = 'Akbar';
 var peran = 'Tabib';
 
-if(nama == ''){
+if(nama === ''){
     console.log('Nama harus diisi!')
 }
 
