@@ -4,7 +4,7 @@ function konversiMenit(menit) {
     if(menit < 10){
         menit = '0'+menit;
     }
-    console.log(jam + ':' + menit)
+    return jam + ':' + menit;
 
   }
 
