@@ -27,7 +27,28 @@
 */
 
 function firstArrived(cars) {
-  // code below here
+
+  var urutan = [];
+  //cari plat kuning
+  for(var i = 0 ; i < cars.length ; i ++){
+    if(cars[i][1] === 'kuning'){
+      urutan[urutan.length] = cars[i][0];
+    }
+  }
+  //cari plat merah
+  for(var i = 0 ; i < cars.length ; i ++){
+    if(cars[i][1] === 'merah'){
+      urutan[urutan.length] = cars[i][0];
+    }
+  }
+  //cari plat hitam
+  for(var i = 0 ; i < cars.length ; i ++){
+    if(cars[i][1] === 'hitam'){
+      urutan[urutan.length] = cars[i][0];
+    }
+  }
+  return urutan;
+
 };
 
 //TEST CASE
