@@ -28,10 +28,10 @@ RULES
 	read terkecil
 	read tengah
 	read hasil = []
-	cari terbesar
-	cari terkecil
-	cari nilai tengah
-	loop(push i ke hasil jika tidak sama dengan tengah)
+	cari terbesar menggunakan if else
+	cari terkecil menggunakan if else
+	cari nilai tengah menggunakan loop angka[i] yang tidak sama dengan terbesar dan terkecil
+	loop dari terkecil + 1 sampai terbesar - 1 (push i ke hasil jika tidak sama dengan tengah)
 	if(hasil === 0){
 		return 'tidak ada angka'
 	}
