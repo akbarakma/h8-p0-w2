@@ -38,20 +38,20 @@ function mineCraft(tambang) {
     var d = 1000;
     var g = 80;
     var harga = 0;
-    for(var i = 0 ; i < tambang.length ; i ++){
-        if(tambang[i] === 'c'){
+    for(var j = 0 ; j < tambang.length ; j ++){
+        if(tambang[j] === 'c'){
             harga += c;
         }
-        else if(tambang[i] === 'i'){
+        else if(tambang[j] === 'i'){
             harga += i;
         }
-        else if(tambang[i] === 's'){
+        else if(tambang[j] === 's'){
             harga += s;
         }
-        else if(tambang[i] === 'd'){
+        else if(tambang[j] === 'd'){
             harga += d;
         }
-        else if(tambang[i] === 'g'){
+        else if(tambang[j] === 'g'){
             harga += g;
         }
     }
