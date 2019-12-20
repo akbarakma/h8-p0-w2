@@ -32,10 +32,39 @@
  */
 
 function mineCraft(tambang) {
+    var c = 20;
+    var i = 30;
+    var s = 40;
+    var d = 1000;
+    var g = 80;
+    var harga = 0;
+    for(var i = 0 ; i < tambang.length ; i ++){
+        if(tambang[i] === 'c'){
+            harga += c;
+        }
+        else if(tambang[i] === 'i'){
+            harga += i;
+        }
+        else if(tambang[i] === 's'){
+            harga += s;
+        }
+        else if(tambang[i] === 'd'){
+            harga += d;
+        }
+        else if(tambang[i] === 'g'){
+            harga += g;
+        }
+    }
+    if(harga === 0){
+        return 'Tidak ada mineral sama sekali';
+    }
+    else{
+        return harga;
+    }
 
 }
 
-console.log(mineCraft('#g####c##s')); //120
+console.log(mineCraft('#g####c##s')); //140
 console.log(mineCraft('######w###q###')); //Tidak ada mineral sama sekali
 console.log(mineCraft('#sdgicp##')); //1170
 console.log(mineCraft('')); //Tidak ada mineral sama sekali

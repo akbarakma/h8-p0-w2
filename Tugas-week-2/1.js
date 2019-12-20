@@ -23,6 +23,14 @@ RULES
 
 //Pseudocode
 /**
+	read angka = [first, second, third]
+	read terbesar
+	read terkecil
+	read tengah
+	read hasil = []
+	cari terbesar
+	cari terkecil
+	cari nilai tengah
 	
 
 
