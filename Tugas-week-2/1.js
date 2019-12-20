@@ -31,6 +31,13 @@ RULES
 	cari terbesar
 	cari terkecil
 	cari nilai tengah
+	loop(push i ke hasil jika tidak sama dengan tengah)
+	if(hasil === 0){
+		return 'tidak ada angka'
+	}
+	else{
+		return hasil
+	}
 	
 
 
