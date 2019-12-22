@@ -30,8 +30,9 @@
 function winner (cars, totalKM) {
   hasil = [];
   waktu = [];
+  jarak = [];
   for(var i = 0 ; i < cars.length ; i++){
-    var jarak = totalKM - cars[i][2];
+    jarak = totalKM - cars[i][2];
     //waktu[waktu.length] = jarak / cars[i][1];
     waktu[i] = jarak / cars[i][1];
     for(var j = 0 ; j < cars.length ; j++){
