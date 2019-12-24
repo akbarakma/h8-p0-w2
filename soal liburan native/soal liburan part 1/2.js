@@ -32,18 +32,28 @@ function winner (cars, totalKM) {
   waktu = [];
   jarak = [];
   for(var i = 0 ; i < cars.length ; i++){
-    jarak = totalKM - cars[i][2];
-    //waktu[waktu.length] = jarak / cars[i][1];
-    waktu[i] = jarak / cars[i][1];
-    for(var j = 0 ; j < cars.length ; j++){
-      
-      if(waktu[i] <= waktu[j]){
-        waktu[i] = waktu[j];
-      }
-    }
-    hasil[hasil.length] = waktu[i];
+    jarak[i] = totalKM - cars[i][2];
+    waktu[i] = jarak[i] / cars[i][1];
+    hasil.push([cars[i][0] , waktu[i]]);
   }
-  //waktu.sort().reverse(); //CARI LAGI BUBBLE SORT
+
+  var swapped;
+    do {
+        swapped = false;
+        for (var i=0; i < hasil.length-1; i++) {
+            if (hasil[i][1] > hasil[i+1][1]) {
+                var temp = hasil[i];
+                hasil[i] = hasil[i+1];
+                hasil[i+1] = temp;
+                swapped = true;
+            }
+        }
+    } while (swapped === true);
+  
+  for(var i = 0 ; i < hasil.length ; i ++){
+    hasil[i] = hasil[i][0];
+  }
+
   return hasil;
 
 
