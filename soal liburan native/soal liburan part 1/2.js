@@ -37,18 +37,15 @@ function winner (cars, totalKM) {
     hasil.push([cars[i][0] , waktu[i]]);
   }
 
-  var swapped;
-    do {
-        swapped = false;
-        for (var i=0; i < hasil.length-1; i++) {
-            if (hasil[i][1] > hasil[i+1][1]) {
-                var temp = hasil[i];
-                hasil[i] = hasil[i+1];
-                hasil[i+1] = temp;
-                swapped = true;
-            }
-        }
-    } while (swapped === true);
+  for(var i = 0 ; i < hasil.length ; i++){
+    for(var j = 0 ; j < hasil.length - i - 1 ; j ++){
+      if(hasil[j][1] > hasil[j+1][1]){
+        var sementara = hasil[j]
+        hasil[j] = hasil[j+1]
+        hasil[j+1] = sementara;
+      }
+    }
+  }
   
   for(var i = 0 ; i < hasil.length ; i ++){
     hasil[i] = hasil[i][0];
