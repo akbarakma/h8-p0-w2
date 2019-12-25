@@ -60,17 +60,6 @@ function mostCarsByState (cars) {
   hasil.push(['C'],[c]);
   hasil.push(['D'],[d]);
 
-  for(var i = 0 ; i < hasil.length ; i++){
-    for(var j = 0 ; j < hasil.length - i - 1 ; j ++){
-      if(hasil[j][1] < hasil[j+1][1]){
-        var sementara = hasil[j]
-        hasil[j] = hasil[j+1]
-        hasil[j+1] = sementara;
-      }
-    }
-  }
-
-
   return hasil;
 };
 
