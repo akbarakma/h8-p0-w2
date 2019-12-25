@@ -55,10 +55,11 @@ function mostCarsByState (cars) {
   b = (b / jumlah)*100;
   c = (c / jumlah)*100;
   d = (d / jumlah)*100;
-  hasil.push(['A'],[a]);
   hasil.push(['B'],[b]);
-  hasil.push(['C'],[c]);
   hasil.push(['D'],[d]);
+  hasil.push(['A'],[a]);
+  hasil.push(['C'],[c]);
+  
 
   return hasil;
 };
