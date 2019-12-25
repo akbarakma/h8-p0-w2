@@ -10,7 +10,22 @@
   // [ 111, 22, 55]
 */
 function palindromeChanger(numbers) {
-  // code below here
+  hasil = [];
+  for(var i = 0 ; i < numbers.length ; i ++){
+    do {
+      var numString = numbers[i].toString();
+      var numBalik = '';
+      for(var j = numString.length - 1 ; j >= 0 ; j--){
+        numBalik += numString[j];
+      }
+      numbers[i] ++
+    }while (numString != numBalik);
+
+    hasil[i] = numString;
+  }
+  
+return hasil;
+
 }
 
 console.log(palindromeChanger([117, 9, 20, 30, 42]))
