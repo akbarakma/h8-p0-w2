@@ -22,8 +22,36 @@ RULES:
  - WAJIB MENYERTAKAN ALGORITMA/PSEUDOCODE
  - DILARANG MENGGUNAKAN REGEX
 */
+/*
+PSEUDOCODE
+temukan length partial
+read hasil = 0
+loop for (i = 0 ; i <= str.length - partial.length i ++){
+  if(str[i] + str[i+1] + str[i+2] === partial){
+    hasil ++
+  }
+}
+return hasil
+
+*/
+
+
+
 function partialCheck(str, partial) {
-  //your code here    
+  var hasil = 0;
+  strLC = str.toLowerCase();
+  for(var i = 0 ; i <= str.length - partial.length ; i ++){
+    if(strLC[i] + strLC[i+1] + strLC[i+2] === partial){
+      hasil ++;
+    }
+  }
+  if(hasil > 0 ){
+    return `found ${hasil} times`;
+  }else{
+    return 'not found';
+  }
+
+
 }
 console.log(partialCheck('abcdcabdabc', 'abc')); // found 2 times
 console.log(partialCheck('zachariah', 'ach')); // found 1 time
