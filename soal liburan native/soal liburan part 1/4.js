@@ -17,7 +17,20 @@ console.log(getCoordinates(array))
 // ["B1", "A3"]
 */
 function getCoordinates(arr) {
-  // code below here
+  var huruf;
+  var angka;
+  var hasil = [];
+  for(var i = 0 ; i < arr.length ; i ++){
+    for(var j = 0 ; j < arr.length ; j ++){
+      if(arr[i][j] === 'x'){
+        huruf = arr[0][j];
+        angka = arr[i][0];
+        hasil.push(huruf + angka);
+      }
+    }
+  }
+  return hasil;
+
 }
 
 var array = [
