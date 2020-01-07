@@ -26,17 +26,17 @@ RULES:
 PSEUDOCODE
 temukan length partial
 read hasil = 0
-loop for (i = 0 ; i <= str.length - partial.length i ++){
+LOOP for (i = 0 ; i <= str.length - partial.length i ++){
   read check = 0;
-    loop for(var j = 0 ; j < partial.length ; j ++){
-      if(strLC[i+j] == partial[j]){
+    LOOP for(var j = 0 ; j < partial.length ; j ++)
+      IF(strLC[i+j] == partial[j]){
         check ++;
-      }
-    }
-    if(check === partial.length){
+      END IF
+    END LOOP
+    IF(check === partial.length)
       hasil ++;
-    }
-}
+    END IF
+END LOOP
 return hasil
 
 */
