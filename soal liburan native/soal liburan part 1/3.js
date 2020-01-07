@@ -31,38 +31,36 @@
 */
 
 function mostCarsByState (cars) {
-  var jumlah = cars.length;
-  hasil = []
-  var a = 0;
-  var b = 0;
-  var c = 0;
-  var d = 0;
-  for(var i = 0 ; i < jumlah ; i ++){
-    if(cars[i] === 'A'){
-      a ++;
+  var tampung = [];
+  for(var i = 0 ; i < cars.length ; i ++){
+    var check = true;
+    for(var j = 0 ; j < tampung.length ; j ++){
+      if(cars[i] === tampung[j]){
+        check = false;
+      }
     }
-    if(cars[i] === 'B'){
-      b ++;
-    }
-    if(cars[i] === 'C'){
-      c ++;
-    }
-    if(cars[i] === 'D'){
-      d ++;
+    if(check){
+      tampung.push(cars[i]);
     }
   }
-  a = (a / jumlah)*100;
-  b = (b / jumlah)*100;
-  c = (c / jumlah)*100;
-  d = (d / jumlah)*100;
-  hasil.push(['B'],[b]);
-  hasil.push(['D'],[d]);
-  hasil.push(['A'],[a]);
-  hasil.push(['C'],[c]);
-  
+
+  var hasil = [];
+  for(var i = 0 ; i < tampung.length ; i ++){
+    var temp = 0;
+    for(var j = 0 ; j < cars.length ; j++){
+      if(tampung[i] === cars[j]){
+        temp ++;
+      }
+    }
+    var rata = (temp / cars.length) * 100;
+    hasil.push(tampung[i]);
+    hasil.push(rata);
+    
+  }
 
   return hasil;
-};
+
+}
 
 console.log(mostCarsByState(['B', 'D', 'B', 'B', 'A', 'C', 'D']));
 /*
