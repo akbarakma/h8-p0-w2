@@ -37,7 +37,7 @@ LOOP for (i = 0 ; i <= str.length - partial.length i ++){
       hasil ++;
     END IF
 END LOOP
-return hasil
+display hasil
 
 */
 
