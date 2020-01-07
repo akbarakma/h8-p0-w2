@@ -27,9 +27,15 @@ PSEUDOCODE
 temukan length partial
 read hasil = 0
 loop for (i = 0 ; i <= str.length - partial.length i ++){
-  if(str[i] + str[i+1] + str[i+2] === partial){
-    hasil ++
-  }
+  read check = 0;
+    loop for(var j = 0 ; j < partial.length ; j ++){
+      if(strLC[i+j] == partial[j]){
+        check ++;
+      }
+    }
+    if(check === partial.length){
+      hasil ++;
+    }
 }
 return hasil
 
@@ -41,7 +47,13 @@ function partialCheck(str, partial) {
   var hasil = 0;
   strLC = str.toLowerCase();
   for(var i = 0 ; i <= str.length - partial.length ; i ++){
-    if(strLC[i] + strLC[i+1] + strLC[i+2] === partial){
+    var check = 0;
+    for(var j = 0 ; j < partial.length ; j ++){
+      if(strLC[i+j] == partial[j]){
+        check ++;
+      }
+    }
+    if(check === partial.length){
       hasil ++;
     }
   }
